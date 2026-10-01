@@ -3,58 +3,874 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shubham Wagh | System Administrator to System Engineer</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #1a202c;
-      background-color: #f7fafc;
-    }
-    header {
-      border-bottom: 2px solid #e2e8f0;
-      padding-bottom: 20px;
-      margin-bottom: 30px;
-    }
-    h1 {
-      margin: 0;
-      color: #0f172a;
-    }
-    .role-badge {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 4px 12px;
-      background: #0284c7;
-      color: #ffffff;
-      font-size: 0.85rem;
-      border-radius: 4px;
-      font-weight: 600;
-    }
-    .status-box {
-      background: #e0f2fe;
-      border-left: 4px solid #0284c7;
-      padding: 12px 16px;
-      margin: 20px 0;
-      border-radius: 0 4px 4px 0;
-    }
-  </style>
+  <title>Shubham Wagh | System Administrator → System Engineer</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body id="top">
 
-  <header>
-    <h1>Shubham Wagh</h1>
-    <div class="role-badge">System Administrator → System Engineer</div>
-    <p>Infrastructure, Linux/Windows Administration, Virtualization & Operational Reliability.</p>
+  <!-- 1. Infrastructure Status Bar -->
+  <aside class="system-status-bar" aria-label="System Environment Status">
+    <div class="container system-status-inner">
+      <div class="status-indicator">
+        <span class="status-dot"></span>
+        <span>Operational Profile: <strong>Jr. System Engineer (Active)</strong></span>
+      </div>
+      <div class="system-meta">
+        Career Path: <code>MKCL (SysAdmin) → Novillex Technologies (System Engineer)</code>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 2. Sticky Navigation -->
+  <header class="top-nav">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-brand">shubham<span>@sysadmin:~$</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#skills">Competencies</a></li>
+          <li><a href="#experience">Career History</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#troubleshooting">RCA & Cases</a></li>
+          <li><a href="#education">Education & WBL</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <div class="status-box">
-    <strong>Deployment Status:</strong> Pipeline active. System baseline established on GitHub Pages.
-  </div>
+  <!-- Main Content Container -->
+  <main class="container">
+    
+    <!-- 3. Hero Section with CLI Inspector -->
+    <section id="home" class="hero-section">
+      <div class="hero-grid">
+        
+        <!-- Left: Identity & Scope -->
+        <div class="hero-identity">
+          <h1>Shubham Wagh</h1>
+          <div class="role-badge-row">
+            <span class="cli-badge cli-badge-current">Current: Jr. System Engineer @ Novillex Technologies</span>
+            <span class="cli-badge">Ex: System Administrator @ MKCL</span>
+          </div>
+          <p class="hero-lead">
+            Hands-on infrastructure operations, operating systems engineering, Proxmox virtualization, enterprise database migrations, automated telemetry pipelines, and storage reliability.
+          </p>
 
-  <p>Welcome. This professional portfolio is currently being configured with zero server overhead using static hosting.</p>
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">Explore Engineering Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+
+        <!-- Right: Infrastructure Inspector Card -->
+        <div class="cli-card" aria-hidden="true">
+          <div class="cli-card-header">
+            <span class="cli-circle red"></span>
+            <span class="cli-circle yellow"></span>
+            <span class="cli-circle green"></span>
+            <span class="cli-card-title">career-telemetry.sh</span>
+          </div>
+          <div class="cli-card-body">
+            <div class="cli-line">$ <span class="cmd">whoami</span></div>
+            <div class="cli-line"><span class="output">shubham_wagh (Jr. System Engineer)</span></div>
+            <div class="cli-line">$ <span class="cmd">cat /etc/career-history</span></div>
+            <div class="cli-line"><span class="output">2022-2025: System Administrator (MKCL)</span></div>
+            <div class="cli-line"><span class="output">2025-PRES: Jr. System Engineer (Novillex Technologies)</span></div>
+            <div class="cli-line">$ <span class="cmd">systemctl status core-services</span></div>
+            <div class="cli-line"><span class="output">● active (running) - GitLab, SQL Server, Proxmox, Naemon</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Telemetry Metric Badges (Command Center Strip) -->
+      <div class="metrics-strip">
+        <div class="metric-box">
+          <div class="metric-val">3+ Years</div>
+          <div class="metric-label">Hands-On SysAdmin & Engineering</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-val">Dual Stack</div>
+          <div class="metric-label">Linux Server & Windows Server</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-val">LVM & Proxmox</div>
+          <div class="metric-label">Type-1 Virtualization & Storage</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-val">Zero Server Fee</div>
+          <div class="metric-label">Production GitHub Pages Engine</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Core Technical Competencies Matrix -->
+    <section id="skills" class="section-block">
+      <div class="section-header">
+        <span class="section-eyebrow">Operational Capabilities</span>
+        <h2 class="section-title">Core Technical Competencies</h2>
+        <p class="section-desc">
+          Structured view of practical systems administration, virtualization environments, network services, and operations automation.
+        </p>
+      </div>
+
+      <div class="matrix-grid">
+        
+        <!-- Cluster 1: Systems & Directory Services -->
+        <article class="matrix-card">
+          <div class="matrix-card-header">
+            <span class="matrix-icon-badge">OS / SYS</span>
+            <h3 class="matrix-card-title">Systems & Directory Services</h3>
+          </div>
+          <p class="section-desc" style="font-size: 0.85rem; margin-bottom: 12px;">
+            Server lifecycle administration, OS baseline configuration, and Active Directory access management.
+          </p>
+          <ul class="tech-tag-list">
+            <li class="tech-tag highlight">Ubuntu Server (24.04 / 22.04)</li>
+            <li class="tech-tag highlight">Windows Server 2022</li>
+            <li class="tech-tag highlight">Active Directory & GPO</li>
+            <li class="tech-tag">Linux User ACLs & Permissions</li>
+            <li class="tech-tag">systemd Service Management</li>
+            <li class="tech-tag">Microsoft 365 & Intune</li>
+          </ul>
+        </article>
+
+        <!-- Cluster 2: Virtualization & Compute -->
+        <article class="matrix-card">
+          <div class="matrix-card-header">
+            <span class="matrix-icon-badge">VIRT / CONT</span>
+            <h3 class="matrix-card-title">Virtualization & Compute</h3>
+          </div>
+          <p class="section-desc" style="font-size: 0.85rem; margin-bottom: 12px;">
+            Type-1 hypervisor operations, container runtime orchestration, and storage pool provisioning.
+          </p>
+          <ul class="tech-tag-list">
+            <li class="tech-tag highlight">Proxmox VE (VMs & LVM Disks)</li>
+            <li class="tech-tag highlight">Docker Engine & Portainer</li>
+            <li class="tech-tag highlight">VM Snapshot Lifecycle</li>
+            <li class="tech-tag">WSL2 Backend Environments</li>
+            <li class="tech-tag">Resource Allocation (vCPU / vRAM)</li>
+          </ul>
+        </article>
+
+        <!-- Cluster 3: Networking & Infrastructure Access -->
+        <article class="matrix-card">
+          <div class="matrix-card-header">
+            <span class="matrix-icon-badge">NET / SEC</span>
+            <h3 class="matrix-card-title">Networking & Gateway Security</h3>
+          </div>
+          <p class="section-desc" style="font-size: 0.85rem; margin-bottom: 12px;">
+            Network segmentation, firewall rules, remote support infrastructure, and perimeter routing.
+          </p>
+          <ul class="tech-tag-list">
+            <li class="tech-tag highlight">pfSense & NAT Port Forwarding</li>
+            <li class="tech-tag highlight">Windows Firewall & iptables</li>
+            <li class="tech-tag highlight">SSL/TLS & Reverse Proxy (IIS / Nginx)</li>
+            <li class="tech-tag">Remotely & Secure RDP Access</li>
+            <li class="tech-tag">Wake-on-LAN (WoL) Subnets</li>
+            <li class="tech-tag">Greenbone Vulnerability Auditing</li>
+          </ul>
+        </article>
+
+        <!-- Cluster 4: Databases & Storage Operations -->
+        <article class="matrix-card">
+          <div class="matrix-card-header">
+            <span class="matrix-icon-badge">DATA / OPS</span>
+            <h3 class="matrix-card-title">Database & Backup Operations</h3>
+          </div>
+          <p class="section-desc" style="font-size: 0.85rem; margin-bottom: 12px;">
+            Relational database migrations, disaster recovery pipelines, and enterprise backup repositories.
+          </p>
+          <ul class="tech-tag-list">
+            <li class="tech-tag highlight">Microsoft SQL Server (SSMS)</li>
+            <li class="tech-tag highlight">Linked Server Migration & T-SQL</li>
+            <li class="tech-tag highlight">Minarca Backup Solution</li>
+            <li class="tech-tag">SMB / CIFS Centralized Storage</li>
+            <li class="tech-tag">PostgreSQL Fundamentals</li>
+          </ul>
+        </article>
+
+        <!-- Cluster 5: Automation, Scripting & Observability -->
+        <article class="matrix-card">
+          <div class="matrix-card-header">
+            <span class="matrix-icon-badge">AUTO / MON</span>
+            <h3 class="matrix-card-title">Automation & Monitoring</h3>
+          </div>
+          <p class="section-desc" style="font-size: 0.85rem; margin-bottom: 12px;">
+            Task scheduling, CLI batch scripting, and operational uptime telemetry.
+          </p>
+          <ul class="tech-tag-list">
+            <li class="tech-tag highlight">Nagios & Grafana Dashboards</li>
+            <li class="tech-tag highlight">OMD / Naemon & NSClient++</li>
+            <li class="tech-tag highlight">PowerShell Remoting (WinRM)</li>
+            <li class="tech-tag">FOG Project (OS Imaging)</li>
+            <li class="tech-tag">OCS Inventory & GLPI Asset Mgmt</li>
+            <li class="tech-tag">Bash Shell Scripting & Cron</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 5. Professional Career History (Company & Role Segregated) -->
+    <section id="experience" class="section-block">
+      <div class="section-header">
+        <span class="section-eyebrow">Professional Track Record</span>
+        <h2 class="section-title">Career Experience & Operations</h2>
+        <p class="section-desc">
+          Strictly segregated timeline separating current systems engineering operations from previous system administration tenure.
+        </p>
+      </div>
+
+      <div class="timeline-list">
+        
+        <!-- Experience Entry 1: Novillex Technologies Pvt. Ltd. (Current) -->
+        <article class="timeline-card active-role">
+          <div class="timeline-header-row">
+            <div>
+              <h3 class="timeline-role">Jr. System Engineer</h3>
+              <div class="timeline-org">Novillex Technologies Pvt. Ltd.</div>
+            </div>
+            <div class="timeline-badges-wrap">
+              <span class="cli-badge cli-badge-current">CURRENT ROLE</span>
+              <span class="timeline-period">02 December 2025 — Present</span>
+            </div>
+          </div>
+
+          <div class="timeline-env-strip">
+            <span class="timeline-env-label">Environment:</span>
+            <code>Ubuntu Server (24.04), Windows Server 2022, GitLab Omnibus, MS SQL Server, IIS, OMD/Naemon, Docker, pfSense</code>
+          </div>
+
+          <ul class="timeline-bullet-list">
+            <li>
+              <strong>Production GitLab Server Administration:</strong> Managed production GitLab Omnibus infrastructure, investigating storage pressure on the root filesystem, diagnosing Prometheus WAL data accumulation, and integrating external SMB network backup mounts to safeguard system availability[cite: 2].
+            </li>
+            <li>
+              <strong>Enterprise Database Migration:</strong> Executed SQL Server cross-server database migration pipelines utilizing Linked Servers and T-SQL; handled complex identity column constraints (<code>IDENTITY_INSERT</code>) and resolved database collation incompatibilities without target data loss[cite: 2].
+            </li>
+            <li>
+              <strong>Gateway & Reverse Proxy Architecture:</strong> Implemented and maintained IIS as a secure reverse proxy gateway with SSL/TLS termination routing external traffic to internal Node.js backend services, configuring pfSense firewall NAT port forwarding rules[cite: 2].
+            </li>
+            <li>
+              <strong>Automated Telemetry & Recovery Monitoring:</strong> Configured OMD (Open Monitoring Distribution) with Naemon and NSClient++ on Ubuntu 24.04 to monitor Windows database recovery logs and status flags with webhook notification alerts[cite: 2].
+            </li>
+            <li>
+              <strong>Remote Administration & Automation:</strong> Engineered PowerShell remoting workflows utilizing encrypted credentials (<code>Import-Clixml</code>) to perform remote silent software deployments from central distribution network shares[cite: 2].
+            </li>
+          </ul>
+        </article>
+
+        <!-- Experience Entry 2: Maharashtra Knowledge Corporation Ltd. (MKCL) (Previous) -->
+        <article class="timeline-card">
+          <div class="timeline-header-row">
+            <div>
+              <h3 class="timeline-role">System Administrator (MFS Intern)</h3>
+              <div class="timeline-org">Maharashtra Knowledge Corporation Ltd. (MKCL)</div>
+            </div>
+            <div class="timeline-badges-wrap">
+              <span class="timeline-period">01 September 2022 — November 2025</span>
+            </div>
+          </div>
+
+          <div class="timeline-env-strip">
+            <span class="timeline-env-label">Environment:</span>
+            <code>Proxmox VE, Ubuntu Server, Windows Server, Active Directory, FOG Project, Minarca, Nagios, Grafana, Greenbone</code>
+          </div>
+
+          <ul class="timeline-bullet-list">
+            <li>
+              <strong>Proxmox Virtualization Management:</strong> Administered Proxmox server environments, managing virtual machines (Linux/Nginx), VM snapshot lifecycles, and LVM disk attachments for organizational compute needs.
+            </li>
+            <li>
+              <strong>Enterprise OS Deployment (FOG Project):</strong> Spearheaded the installation and configuration of the FOG Project server, streamlining network PXE operating system deployment and image management across desktop endpoints.
+            </li>
+            <li>
+              <strong>Centralized Backup & Recovery (Minarca):</strong> Assisted in the deployment and administration of Minarca for centralized enterprise backup and disaster recovery solutions, ensuring robust data integrity.
+            </li>
+            <li>
+              <strong>Monitoring & Visualization Dashboards:</strong> Maintained infrastructure observability using Nagios for real-time host monitoring and configured Grafana telemetry dashboards for proactive performance issue identification.
+            </li>
+            <li>
+              <strong>Identity, Access & Endpoint Governance:</strong> Managed user accounts, security groups, and password policies via Active Directory; deployed and administered Microsoft 365, Intune profiles, and secure enterprise file transfers.
+            </li>
+            <li>
+              <strong>Vulnerability Scanning & Compliance:</strong> Deployed and utilized Greenbone for internal vulnerability scanning and security posture auditing to identify and mitigate infrastructure vulnerabilities.
+            </li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 6. Featured Engineering & Infrastructure Projects -->
+    <section id="projects" class="section-block">
+      <div class="section-header">
+        <span class="section-eyebrow">Implementation Engineering</span>
+        <h2 class="section-title">Featured Infrastructure Projects</h2>
+        <p class="section-desc">
+          Key engineering initiatives delivered during tenure at Novillex Technologies and MKCL, strictly categorized by operational scope[cite: 2].
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project 1: Production GitLab Server Administration (Novillex Technologies) -->
+        <article class="project-card">
+          <div class="project-card-header">
+            <div class="project-card-title-group">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                <span class="project-domain-tag">[STORAGE / RECOVERY OPS]</span>
+                <span class="project-company-badge">Novillex Technologies</span>
+              </div>
+              <h3>GitLab Production Server Storage & Backup Architecture</h3>
+            </div>
+            <div class="project-stack-strip">
+              <span class="cli-badge">Ubuntu Server</span>
+              <span class="cli-badge">GitLab Omnibus</span>
+              <span class="cli-badge">Bash</span>
+              <span class="cli-badge">SMB Storage</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-spec-row">
+              <span class="project-spec-label">Problem</span>
+              <div class="project-spec-content">
+                Production GitLab host reached 100% root filesystem utilization, degrading service availability and preventing normal web logins[cite: 2].
+              </div>
+            </div>
+            <div class="project-spec-row">
+              <span class="project-spec-label">Investigation</span>
+              <div class="project-spec-content">
+                Conducted deep filesystem analysis across directory trees; diagnosed major disk consumers including Prometheus metrics (25 GB), Write-Ahead Logs (22 GB), repository data (18 GB), and localized backup files[cite: 2].
+              </div>
+            </div>
+            <div class="project-spec-row">
+              <span class="project-spec-label">What I Built</span>
+              <div class="project-spec-content">
+                <ul>
+                  <li>Isolated root filesystem pressure and restored service baseline health using <code>gitlab-ctl</code>[cite: 2].</li>
+                  <li>Integrated enterprise network backup storage mounts to offload snapshot bundles from the local host disk[cite: 2].</li>
+                  <li>Audited and refined automated backup scripts (<code>gitlab-backup-prod.sh</code>) and logrotate thresholds to prevent disk exhaustion recurrence[cite: 2].</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-spec-row">
+              <span class="project-spec-label">Outcome</span>
+              <div class="project-spec-content">
+                <strong>Service Restored:</strong> Production instance stability and login access recovered without repository data loss, transferring backup footprints to external high-capacity network storage pools[cite: 2].
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: SQL Server Production Database Migration (Novillex Technologies) -->
+        <article class="project-card">
+          <div class="project-card-header">
+            <div class="project-card-title-group">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                <span class="project-domain-tag">[DATABASE / DATA PIPELINE]</span>
+                <span class="project-company-badge">Novillex Technologies</span>
+              </div>
+              <h3>Enterprise SQL Server Migration & Schema Reconciliation</h3>
+            </div>
+            <div class="project-stack-strip">
+              <span class="cli-badge">MS SQL Server</span>
+              <span class="cli-badge">T-SQL</span>
+              <span class="cli-badge">Linked Server</span>
+              <span class="cli-badge">Python / pyodbc</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-spec-row">
+              <span class="project-spec-label">Problem</span>
+              <div class="project-spec-content">
+                Required secure cross-server table and record migration while strictly preserving existing destination records, reconciling identity constraints, and handling database collation mismatches[cite: 2].
+              </div>
+            </div>
+            <div class="project-spec-row">
+              <span class="project-spec-label">Implementation</span>
+              <div class="project-spec-content">
+                <ul>
+                  <li>Engineered cross-server data migration pipelines utilizing SQL Server Linked Servers and T-SQL[cite: 2].</li>
+                  <li>Handled critical migration constraints: managed <code>IDENTITY_INSERT ON/OFF</code> transitions on complex schedule tables and reconciled collation differences[cite: 2].</li>
+                  <li>Implemented automated row-count validation queries across source and destination tables to guarantee zero record omission[cite: 2].</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-spec-row">
+              <span class="project-spec-label">Outcome</span>
+              <div class="project-spec-content">
+                <strong>Data Integrity Preserved:</strong> Successfully transferred core tables with verified row counts, maintaining data consistency without overwriting pre-existing target records[cite: 2].
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: FOG Project Enterprise OS Imaging (MKCL) -->
+        <article class="project-card">
+          <div class="project-card-header">
+            <div class="project-card-title-group">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                <span class="project-domain-tag">[INFRASTRUCTURE DEPLOYMENT]</span>
+                <span class="project-company-badge">MKCL</span>
+              </div>
+              <h3>Automated Network OS Deployment with FOG Project</h3>
+            </div>
+            <div class="project-stack-strip">
+              <span class="cli-badge">Linux Server</span>
+              <span class="cli-badge">FOG Project</span>
+              <span class="cli-badge">PXE / TFTP</span>
+              <span class="cli-badge">Image Management</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-spec-row">
+              <span class="project-spec-label">Objective</span>
+              <div class="project-spec-content">
+                Eliminate manual OS installations across multiple workstations and establish centralized golden image capture and multicast distribution.
+              </div>
+            </div>
+            <div class="project-spec-row">
+              <span class="project-spec-label">What I Built</span>
+              <div class="project-spec-content">
+                <ul>
+                  <li>Spearheaded full installation, networking, and storage node configuration of the FOG Project server.</li>
+                  <li>Configured PXE network boot environments, DHCP reservations, and golden image repositories for rapid workstation provisioning.</li>
+                  <li>Standardized OS image deployment workflows across organizational desktop endpoints.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-spec-row">
+              <span class="project-spec-label">Outcome</span>
+              <div class="project-spec-content">
+                <strong>Deployment Efficiency:</strong> Drastically reduced endpoint provisioning times and manual engineering overhead, standardizing software baselines across endpoints.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Application Gateway & Reverse Proxy Infrastructure (Novillex Technologies) -->
+        <article class="project-card">
+          <div class="project-card-header">
+            <div class="project-card-title-group">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                <span class="project-domain-tag">[GATEWAY / SECURITY]</span>
+                <span class="project-company-badge">Novillex Technologies</span>
+              </div>
+              <h3>Secure Reverse Proxy & SSL Gateway Infrastructure</h3>
+            </div>
+            <div class="project-stack-strip">
+              <span class="cli-badge">Windows Server / IIS</span>
+              <span class="cli-badge">pfSense</span>
+              <span class="cli-badge">Node.js Upstream</span>
+              <span class="cli-badge">OpenSSL / PFX</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-spec-row">
+              <span class="project-spec-label">Architecture</span>
+              <div class="project-spec-content">
+                Configured IIS as a front-facing reverse proxy gateway routing incoming external traffic to an internal Node.js banking service daemon[cite: 2].
+              </div>
+            </div>
+            <div class="project-spec-row">
+              <span class="project-spec-label">What I Built</span>
+              <div class="project-spec-content">
+                <ul>
+                  <li>Converted PEM certificate chains to encrypted PFX bundles and established port 443 HTTPS bindings on IIS[cite: 2].</li>
+                  <li>Configured perimeter firewall NAT port forwarding rules on pfSense and Windows Firewall access control lists[cite: 2].</li>
+                  <li>Engineered specific dual-binding routing allowing concurrent HTTP and HTTPS traffic flow without disruptive automatic redirections[cite: 2].</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-spec-row">
+              <span class="project-spec-label">Outcome</span>
+              <div class="project-spec-content">
+                <strong>High-Security Gateway:</strong> Operational SSL/TLS termination with secure perimeter pass-through to internal application microservices[cite: 2].
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 7. Operational Troubleshooting & Root Cause Analysis (RCA) -->
+    <section id="troubleshooting" class="section-block">
+      <div class="section-header">
+        <span class="section-eyebrow">Diagnostic Capability</span>
+        <h2 class="section-title">Operational Troubleshooting & RCA</h2>
+        <p class="section-desc">
+          Documented investigations into production and environment failures, demonstrating systematic diagnostics across storage, hypervisors, and database constraints[cite: 2].
+        </p>
+      </div>
+
+      <div class="rca-grid">
+        
+        <!-- RCA 1: Linux Storage Exhaustion -->
+        <article class="rca-card">
+          <div class="rca-card-header">
+            <h3>Linux Server Root Filesystem Saturation (100% Disk Full)</h3>
+            <span class="rca-badge-resolved">Resolved</span>
+          </div>
+          <div class="rca-entry">
+            <span class="rca-entry-title">Symptom</span>
+            <div class="rca-entry-desc">
+              Server filesystem utilization hit 100%; application services failed to write session state, triggering authentication and login failures[cite: 2].
+            </div>
+          </div>
+          <div class="rca-entry">
+            <span class="rca-entry-title">Diagnostic Commands</span>
+            <div class="rca-entry-desc">
+              <code>df -h /</code>, <code>du -sh /var/opt/* | sort -hr</code>, <code>gitlab-ctl status</code>[cite: 2]
+            </div>
+          </div>
+          <div class="rca-entry">
+            <span class="rca-entry-title">Root Cause & Remediation</span>
+            <div class="rca-entry-desc">
+              Diagnosed high telemetry WAL volume (Prometheus data > 25 GB) and un-rotated local backup artifacts[cite: 2]. Cleared local backup pressure, remounted backups to external high-capacity network storage pools, and restored operational state[cite: 2].
+            </div>
+          </div>
+        </article>
+
+        <!-- RCA 2: SQL Server Migration Constraint Conflicts -->
+        <article class="rca-card">
+          <div class="rca-card-header">
+            <h3>SQL Server Identity Insert & Collation Incompatibilities</h3>
+            <span class="rca-badge-resolved">Mitigated</span>
+          </div>
+          <div class="rca-entry">
+            <span class="rca-entry-title">Symptom</span>
+            <div class="rca-entry-desc">
+              Data migration halted with error: <em>"Cannot insert explicit value for identity column when IDENTITY_INSERT is set to OFF"</em> alongside cross-database collation conflicts[cite: 2].
+            </div>
+          </div>
+          <div class="rca-entry">
+            <span class="rca-entry-title">Investigation</span>
+            <div class="rca-entry-desc">
+              Analyzed source vs target DDL schemas; identified auto-increment identity flags on schedule tables and collation mismatch between <code>Latin1_General_CI_AI</code> and <code>SQL_Latin1_General_CP1_CI_AS</code>[cite: 2].
+            </div>
+          </div>
+          <div class="rca-entry">
+            <span class="rca-entry-title">Remediation</span>
+            <div class="rca-entry-desc">
+              Wrapped pipeline batches in explicit <code>SET IDENTITY_INSERT TableName ON/OFF</code> blocks and applied explicit collation clauses to preserve target primary key consistency[cite: 2].
+            </div>
+          </div>
+        </article>
+
+        <!-- RCA 3: Windows Server Virtualization & Docker Engine Startup -->
+        <article class="rca-card">
+          <div class="rca-card-header">
+            <h3>Hypervisor & Container Subsystem Startup Diagnosis</h3>
+            <span class="rca-badge-investigated">Investigated</span>
+          </div>
+          <div class="rca-entry">
+            <span class="rca-entry-title">Symptom</span>
+            <div class="rca-entry-desc">
+              Docker Engine failed to initialize on a virtualized Windows Server 2022 guest host[cite: 2].
+            </div>
+          </div>
+          <div class="rca-entry">
+            <span class="rca-entry-title">Diagnostic Commands</span>
+            <div class="rca-entry-desc">
+              <code>Get-Service *docker*</code>, <code>Get-WindowsFeature Containers</code>, <code>systeminfo | findstr /i "Hyper-V"</code>, <code>wsl --status</code>[cite: 2]
+            </div>
+          </div>
+          <div class="rca-entry">
+            <span class="rca-entry-title">Technical Finding</span>
+            <div class="rca-entry-desc">
+              Verified CPU virtualization pass-through from parent Proxmox hypervisor, confirmed WSL2 runtime availability, and identified absence of native Windows Containers feature dependency[cite: 2].
+            </div>
+          </div>
+        </article>
+
+        <!-- RCA 4: PowerShell Remoting & Centralized Software Rollout -->
+        <article class="rca-card">
+          <div class="rca-card-header">
+            <h3>Remote Execution & SMB Share Silent Software Rollout</h3>
+            <span class="rca-badge-resolved">Automated</span>
+          </div>
+          <div class="rca-entry">
+            <span class="rca-entry-title">Objective & Problem</span>
+            <div class="rca-entry-desc">
+              Deploy software silently across network endpoints from a central network SMB share without interactive UI interruptions or plain-text credential leaks[cite: 2].
+            </div>
+          </div>
+          <div class="rca-entry">
+            <span class="rca-entry-title">Tooling & Pipeline</span>
+            <div class="rca-entry-desc">
+              <code>Import-Clixml</code>, <code>Invoke-Command</code>, <code>Enter-PSSession</code> (WinRM)[cite: 2]
+            </div>
+          </div>
+          <div class="rca-entry">
+            <span class="rca-entry-title">Implementation</span>
+            <div class="rca-entry-desc">
+              Secured credentials via encrypted XML artifacts, established authenticated remote drive mapping to the distribution share, and executed installers silently with suppressed restart flags[cite: 2].
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 8. Education, Credentials & Verifiable Certifications -->
+    <section id="education" class="section-block">
+      <div class="section-header">
+        <span class="section-eyebrow">Academic & Verified Credentials</span>
+        <h2 class="section-title">Education & Certifications</h2>
+        <p class="section-desc">
+          Formal university degree in systems administration alongside verified technical badges in cloud and database management.
+        </p>
+      </div>
+
+      <!-- Education Cards -->
+      <div class="edu-grid">
+        
+        <!-- Bachelor Degree (YCMOU + MKCL) -->
+        <article class="edu-card">
+          <div>
+            <h3 class="edu-degree">Bachelor of Science in Computer System Administration</h3>
+            <div class="edu-org">Yashwantrao Chavan Maharashtra Open University (YCMOU)</div>
+            <p class="edu-desc">
+              Conferred by YCMOU in collaboration with Maharashtra Knowledge Corporation Ltd. (MKCL). Focused on IT infrastructure lifecycle, enterprise server deployment, virtualization, platform security, and operational reliability.
+            </p>
+          </div>
+          <div class="edu-meta-badge">
+            <span>Duration: 2022 — 2025</span>
+            <span style="color: var(--status-healthy);">Graduated</span>
+          </div>
+        </article>
+
+        <!-- HSC Science -->
+        <article class="edu-card">
+          <div>
+            <h3 class="edu-degree">Higher Secondary Certificate (HSC) — Science</h3>
+            <div class="edu-org">State Board of Maharashtra</div>
+            <p class="edu-desc">
+              Academic foundation in physical sciences, mathematics, and computing principles, qualifying admission into the professional undergraduate degree track.
+            </p>
+          </div>
+          <div class="edu-meta-badge">
+            <span>Completed: 2022</span>
+            <span>Score: <strong>70.00%</strong></span>
+          </div>
+        </article>
+
+        <!-- SSC -->
+        <article class="edu-card">
+          <div>
+            <h3 class="edu-degree">Secondary School Certificate (SSC)</h3>
+            <div class="edu-org">State Board of Maharashtra</div>
+            <p class="edu-desc">
+              Secondary schooling encompassing general mathematics, sciences, and analytical foundations.
+            </p>
+          </div>
+          <div class="edu-meta-badge">
+            <span>Completed: 2020</span>
+            <span>Score: <strong>75.20%</strong></span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Dedicated HR/Interviewer Explainer: Work-Based Learning (WBL) Architecture -->
+      <aside class="wbl-card" aria-label="Work-Based Degree Methodology">
+        <div class="wbl-header">
+          <span class="matrix-icon-badge">WBL / ARCHITECTURE</span>
+          <h3 class="wbl-title">Understanding the Work-Based Degree Model (YCMOU & MKCL)</h3>
+        </div>
+        <p class="wbl-text">
+          Following completion of HSC (12th) in 2022, I enrolled in the specialized <strong>B.Sc. in Computer System Administration</strong> program established jointly by YCMOU and MKCL. This degree operates on the <em>"Learning Through Working"</em> (Work-Based Learning) pedagogy rather than purely classroom-bound theory:
+        </p>
+
+        <div class="wbl-points-grid">
+          <div class="wbl-point-box">
+            <div class="wbl-point-title">1. Real-World Workplace Learning</div>
+            <div class="wbl-point-desc">
+              The industry workplace serves as the primary learning laboratory. Learners are placed in an operational IT infrastructure environment for 3 continuous years (Sept 2022 – Nov 2025 at MKCL) performing productive systems administration tasks.
+            </div>
+          </div>
+          <div class="wbl-point-box">
+            <div class="wbl-point-title">2. Simultaneous Academic Progression</div>
+            <div class="wbl-point-desc">
+              Theory is synthesized before/after working hours and holidays via MKCL’s structured e-learning framework, earning knowledge credits alongside industry work credits validated by mentors.
+            </div>
+          </div>
+          <div class="wbl-point-box">
+            <div class="wbl-point-title">3. Dual Tangible Outcome</div>
+            <div class="wbl-point-desc">
+              Upon graduation, learners attain both an accredited 3-year UGC-recognized University Degree (B.Sc. by YCMOU) and 3 years of verified enterprise industry experience, eliminating the traditional experience gap.
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Certifications Sub-Header -->
+      <div style="margin-top: 40px; margin-bottom: 16px;">
+        <span class="section-eyebrow">Industry Credentials</span>
+        <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-main);">Verifiable Professional Certifications</h3>
+      </div>
+
+      <!-- Verifiable Certifications Grid -->
+      <div class="cert-grid">
+        
+        <!-- Oracle Badge 1 -->
+        <article class="cert-card">
+          <div class="cert-title-group">
+            <h3>Oracle Certified Professional</h3>
+            <div class="cert-issuer">Oracle University • Official Digital Badge</div>
+          </div>
+          <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=6E67CCC4F15B93699F3104D7A670111C1AA431E1AD395B44FEA7908E99B33E93" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
+            Verify Badge ↗
+          </a>
+        </article>
+
+        <!-- Oracle Badge 2 -->
+        <article class="cert-card">
+          <div class="cert-title-group">
+            <h3>Oracle Database Certification</h3>
+            <div class="cert-issuer">Oracle University • Official Digital Badge</div>
+          </div>
+          <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=CDE4AA5B580941BE5C285AE0847CB539510F13B50B124DF56F809A8933706F4C" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
+            Verify Badge ↗
+          </a>
+        </article>
+
+        <!-- Oracle Badge 3 -->
+        <article class="cert-card">
+          <div class="cert-title-group">
+            <h3>Oracle Infrastructure & Cloud Badge</h3>
+            <div class="cert-issuer">Oracle University • Official Digital Badge</div>
+          </div>
+          <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=167B1C631EF5ED42D8197127A19B3DE61D603E69A2E5C770B4D05BAFB3DA7B8B" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
+            Verify Badge ↗
+          </a>
+        </article>
+
+        <!-- Udemy Linux Server Administration -->
+        <article class="cert-card">
+          <div class="cert-title-group">
+            <h3>Linux Server Administration</h3>
+            <div class="cert-issuer">Udemy Professional Course</div>
+          </div>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
+            Verify Certificate ↗
+          </a>
+        </article>
+
+      </div>
+
+      <!-- Languages Known Strip -->
+      <div class="languages-strip">
+        <span class="lang-label">Languages Known:</span>
+        <span class="cli-badge">English</span>
+        <span class="cli-badge">Hindi</span>
+        <span class="cli-badge">Marathi</span>
+      </div>
+    </section>
+
+    <!-- 9. Contact / Operational Communication Hub -->
+    <section id="contact" class="section-block">
+      <div class="section-header">
+        <span class="section-eyebrow">Direct Gateway</span>
+        <h2 class="section-title">Communication Hub & Profiles</h2>
+        <p class="section-desc">
+          Available for technical queries, systems engineering discussions, and infrastructure opportunities.
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>
+            Whether discussing high-availability server operations, virtualization architectures, or database pipelines, feel free to reach out directly through verified channels.
+          </p>
+        </div>
+
+        <div class="contact-matrix-grid">
+          <!-- Direct Email Link (Auto-Copy + Direct Mail Trigger) -->
+          <div class="contact-item-link" id="emailTriggerBox" role="button" tabindex="0" title="Click to copy email address">
+            <span class="contact-channel-label">Direct Mail (Click to Copy)</span>
+            <span class="contact-channel-val" id="emailVal">shubhamwaghagkmf010@gmail.com</span>
+            <span id="copyToast">✓ Copied to clipboard!</span>
+          </div>
+
+          <!-- Verified LinkedIn Profile -->
+          <a href="https://www.linkedin.com/in/shubhamwaghagkmf010/" target="_blank" rel="noopener noreferrer" class="contact-item-link">
+            <span class="contact-channel-label">LinkedIn</span>
+            <span class="contact-channel-val">shubhamwaghagkmf010</span>
+          </a>
+
+          <!-- GitHub Profile -->
+          <a href="https://github.com/shubhamwaghagkmf010" target="_blank" rel="noopener noreferrer" class="contact-item-link">
+            <span class="contact-channel-label">GitHub</span>
+            <span class="contact-channel-val">shubhamwaghagkmf010</span>
+          </a>
+
+          <!-- Local Static Hosting Engine Indicator -->
+          <div class="contact-item-link">
+            <span class="contact-channel-label">Hosting Engine</span>
+            <span class="contact-channel-val">100% Free GitHub Pages</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="container">
+    <div>
+      © Shubham Wagh | System Administrator → Jr. System Engineer
+    </div>
+    <div>
+      Engineered with Semantic HTML5 & CSS • Zero Server Overhead
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top Terminal Button -->
+  <button id="backToTop" aria-label="Back to Top">cd ~ [TOP]</button>
+
+  <!-- Vanilla Lightweight Interactive JavaScript -->
+  <script>
+    // 1. Smooth Back-to-Top display controller
+    const topBtn = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    });
+
+    topBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // 2. Email Copy Handler (Does not force Outlook, gives instant copy + standard mail action)
+    const emailBox = document.getElementById("emailTriggerBox");
+    const copyToast = document.getElementById("copyToast");
+    const targetEmail = "shubhamwaghagkmf010@gmail.com";
+
+    emailBox.addEventListener("click", () => {
+      navigator.clipboard.writeText(targetEmail).then(() => {
+        copyToast.style.display = "block";
+        setTimeout(() => {
+          copyToast.style.display = "none";
+        }, 3000);
+      });
+      // Trigger default system protocol without aggressive app binding
+      window.location.href = "mailto:" + targetEmail;
+    });
+
+    emailBox.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        emailBox.click();
+      }
+    });
+  </script>
 
 </body>
 </html>
